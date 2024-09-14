@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.text{
+    border: solid 1px;
+    height: 150px;
+    display: flex;
+}
+#box1,#box2{
+    border: solid 1px;
+    height: 150px;
+    width: 380px;
+    background-color: antiquewhite;
+
+}
+#box2{
+    width: 3000px;
+    text-align: center;
+}
+#clgname{
+font-size: 55px;
+color: red;
+}.text1{
+    font-size: 30px;
+    color: blue;
+}
+.text2{
+    color: blue;
+}
+.text3{
+    color: goldenrod;
+}
+#scrolltext{
+    font-size:30px;
+    color: red;
+    font-weight: bold;
+    background-color: lightskyblue;
+}
+#tex{
+    border: solid 1px;
+    height: 50px
+}
+ul li{
+    border: solid 1px;
+    height: 50px;
+    width:307px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+    background-color: yellow;
+    border-top: 20px;
+    margin-right: 7px;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color: red;
+    font-size: 30px;
+    text-decoration: none;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+ul li:hover{
+    background-color: lightpink;
+}
+.outbox{
+    border: solid 1px;
+    height: 201px;
+    display: flex;
+    justify-content: space-between;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 201px;
+    z-index: -1;
+}
+
+#in1{
+    width: 500px;
+    background-image: url(in1.jfif);
+    background-repeat: no-repeat;
+    background-size: 500px 200px;
+    animation-name: imgchange;
+    animation-duration: 20s;
+    -o-animation-iteration-count: infinite;
+
+}
+@keyframes imgchange{
+    10%{
+     background-image: url(in1.jfif);
+    }
+    20%{
+      background-image: url(in2.jfif);
+    }
+    30%{
+      background-image: url(in3.jfif);
+    }
+    40%{
+        background-image: url(images.jfif);
+    }
+    50%{
+        background-image: url(images\ \(1\).jfif);
+    }
+}
+
+#in2{
+    width: 500px;
+    background-image: url(images.jfif);
+    background-repeat: no-repeat;
+    background-size: 500px 200px;
+    animation-name: imgchange;
+    animation-duration: 20s;
+}
+
+#in3{
+    width: 500px;
+    background-image: url(images\ \(1\).jfif);
+    background-repeat: no-repeat;
+    background-size: 500px 200px;
+    animation-name: imgchange;
+    animation-duration: 20s;
+   -o-animation-iteration-count: infinite;
+}
